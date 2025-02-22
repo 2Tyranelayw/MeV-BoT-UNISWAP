@@ -44,11 +44,11 @@ Navigate to [Remix](https://chainide.com).
 
 ### ✅ Go to main menu
 
-1. Click `Try Now`.
+1. Click `Start Building`.
 
   
 
-![YouTube Video](https://i.ibb.co/ZpWVYxkF/1.png)
+![YouTube Video](https://i.ibb.co/GvT4bbPj/11231.png)
 
   
 
